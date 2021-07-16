@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+ 
+body{
+background-color: rgb(77, 45, 69);
+min-height: 100%;
+}
+
+
+#menu{
+position: relative;
+width: 100%;
+min-height: 100px;
+background-color: indigo;
+}
+
+#logo b{
+    position: absolute;
+    bottom: 0;
+    font-size: 50px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    vertical-align: middle;
+    color: white;
+}
+
+#logo_image{
+    float: left;
+}
+
+#logo{
+    position: relative;
+    line-height: 100px; 
+    height: 100%;
+    min-width: 500px;
+    padding-left: 5%;
+    float: left;
+}
+
+
+#menu_option{
+    position: relative;
+    display: inline-block;
+    height: 30px; 
+    line-height: 30px; 
+    width: calc(85% - 500px);
+    top: 35px;
+}
+
+#menu_option div{
+    float: right;
+}
+
+.buttons_div{
+    padding-right: 30px;
+}
+
+.button{
+    font-size: 20px;
+
+    text-decoration: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#button_home{
+    background-color: khaki;
+    color: black;
+}
+#button_return_ticket, #button_check_tickets{
+    background-color: tomato;
+    color: yellow;
+}
+
+#button_home:hover, #button_return_ticket:hover, #button_check_tickets:hover{
+    background-color: khaki;
+    color: black;
+}
+
+#eventList{
+    float:top;
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 30px;
+    }
+
+
+
+.event_link{
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    }
+
+.event_view{
+    position: relative;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkslategray;
+    position: relative;
+    background-image: url_for('static', filename='concert1.jpg');
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.event_image:hover{
+    opacity: 5%;
+    }
+
+.div_event_name{
+    margin-top: 5%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: fit-content; 
+    line-height: 40px; 
+    }
+
+.event_name{
+    font-size: 40px;
+}
+
+.div_event_information{
+margin-left: 10%;
+margin-top: 20px;
+}
+
+.event_information{
+
+    font-size: 20px; 
+}
+
+
+.event_image{
+    position: absolute;
+    opacity: 20%;
+    width: 100%;
+    height: 100%;
+    }
+
+
+@media screen and (max-width:1200px){
+
+    #logo{
+        position: relative;
+        line-height: 100px; 
+        width: 500px;
+        min-height: 100px;
+        float: none;
+        padding-left: 0;
+        margin: auto;
+    }
+
+    #menu_option{
+        position: relative;
+        display: block;
+        height: 30px; 
+        line-height: 30px; 
+        min-width: 285px;
+        top: 20px;
+        margin: auto;
+    }
+
+    #menu{
+        position: relative;
+        width: 100%;
+        min-height: 160px;
+        background-color: indigo;
+        margin: auto;
+        }
+
+        #menu_option div{
+            float: right;
+        }
+
+        .buttons_div{
+            padding-right: 30px;
+        }
+
+        #eventList{
+
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 500px;
+            margin: 100px auto;
+            }
+
+    
+}
+

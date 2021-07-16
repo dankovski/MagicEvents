@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Magic Events</title>
+<link rel="stylesheet" type="text/css" href={{ url_for('static', filename='style_return.css')}}>
+<script type="text/javascript" src={{ url_for('static', filename='script_return.js')}}></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+<div id="wrapper">
+
+<header>
+
+<nav id="menu">
+
+<div id="logo">
+    <img id="logo_image" src={{ url_for('static', filename='photos/confetti.png')}}/>
+    <b>MAGIC EVENTS</b>
+</div>
+
+<div id="menu_option">
+        <div><a href="#" class="button" id="button_return_ticket">RETURN TICKET</a></div>
+        <div class="buttons_div"><a href="/" class="button" id="button_home">HOME</a></div>
+</div>
+
+</nav>
+
+</header>
+
+<div class="content">
+
+    <div class="login_window" id="id_login_window">
+        <div class="div_text_login">
+            <b class="login_text">Enter Login:</b>
+        </div> 
+        <div class="enter_input">
+            <input type="text" class="inputs" id="input_login"> 
+        </div>
+            
+        <div class="div_text_login">
+            <b class="login_text">Enter password:</b>
+        </div> 
+
+        <div class="enter_input">
+            <input type="password" class="inputs" id="input_password">  
+        </div>
+
+        <div class="div_text_login">
+            <b class="login_text">Enter code:</b>
+        </div> 
+
+        <div class="enter_input">
+            <input type="text" class="inputs" id="input_code">  
+        </div>
+
+        <div id="div_return">
+            <b class="button" onclick="return_ticket();" id="button_return">RETURN</b>
+        </div>
+
+
+    
+    </div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Magic Events</title>
+<link rel="stylesheet" type="text/css" href={{ url_for('static', filename='style_index.css')}}>
+<script type="text/javascript" src={{ url_for('static', filename='script_index.js')}}></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+</head>
+
+<body onload="show();">
+
+
+<div id="wrapper">
+
+<header>
+
+<nav id="menu">
+
+<div id="logo">
+    <img id="logo_image" src={{ url_for('static', filename='photos/confetti.png')}}/>
+    <b>MAGIC EVENTS</b>
+</div>
+
+<div id="menu_option">
+        <div><a href="/return" class="button" id="button_return_ticket">RETURN TICKET</a></div>
+        <div class="buttons_div"><a href="/" class="button" id="button_home">HOME</a></div>
+</div>
+
+</nav>
+
+</header>
+
+
+<div id="eventList">
+
+</div>
+
+
+
+</div>
+
+
+
+</body>
+
+
+</html>
